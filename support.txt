@@ -1,0 +1,16 @@
+to execute the environment "activated should not have the extension .bat"
+rest-api/Scripts/activate
+
+to check what django version is installed(you must be into the environment):
+django-admin --version
+
+to check what python version is installed:
+py --version
+
+to launch server(environment must be activate and you must be in module "mysite" )
+
+part 1: 
+*crear un proyecto
+*lanzar el servidor
+*crear tus primeras rutas
+*definir conceptos como proyecto(el paquete principal) y app(un paquete dependiente del principal)
