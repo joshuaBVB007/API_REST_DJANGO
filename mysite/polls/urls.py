@@ -4,6 +4,10 @@ from django.urls import path
 # we imported the views from views.py,then we're gonna call the methods detail,results and vote
 from . import views
 
+
+# Namespace for this app
+app_name='polls'
+
 urlpatterns = [
     # ex: /polls/
     path('', views.index, name='index'),
