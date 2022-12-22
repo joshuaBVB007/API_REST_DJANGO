@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
     <h1>Hola somos Polls html</h1>
+    <img src="{% static 'polls/piña.jpeg' %}" alt="piña" srcset="">
     {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}

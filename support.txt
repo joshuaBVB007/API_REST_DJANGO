@@ -8,9 +8,30 @@ to check what python version is installed:
 py --version
 
 to launch server(environment must be activate and you must be in module "mysite" )
+py manage.py runserver
 
 part 1: 
 *crear un proyecto
 *lanzar el servidor
 *crear tus primeras rutas
 *definir conceptos como proyecto(el paquete principal) y app(un paquete dependiente del principal)
+                #################
+                #APPS AT DJANGO#
+                #################
+
+py manage.py startapp viajes
+
+
+                #################
+                #MODEL AT DJANGO#
+                #################
+Models are python classes which maps a table in mysql in this case.
+
+how to create a table(also called model)
+
+1-create and app with the command: py manage.py startapp travels
+2-go to models.py into Travels module and create a class and define the fields
+as you can see at models.py into the polls module
+3-write your new app in installed_apps and execute the command to create the model: 
+py manage.py makemigrations
+4-execute this command to write the table at mysql: py manage.py migrate
